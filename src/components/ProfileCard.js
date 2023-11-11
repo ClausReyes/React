@@ -1,3 +1,5 @@
+import LogoImg from "./"
+
 function ProfileCard(props){
      const {titulo , arroba , img } =props
         return (
