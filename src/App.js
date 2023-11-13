@@ -5,6 +5,7 @@ import "bulma/css/bulma.css"
 import NavBar from "./components/NavBar/NavBar";
 import "./App.css"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import CartWiget from "./components/CartWiget/CartWiget";
 
 
 
@@ -12,9 +13,9 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 function App(){
     return(
       <div className="App">
-           <NavBar/> 
+           <NavBar/> <CartWiget/>
            <ItemListContainer greeting={`Bienvenidos`}/>
-        
+      
         </div>
     );
 
