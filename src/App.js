@@ -13,7 +13,8 @@ import CartWiget from "./components/CartWiget/CartWiget";
 function App(){
     return(
       <div className="App">
-           <NavBar/> <CartWiget/>
+           <NavBar/> 
+    
            <ItemListContainer greeting={`Bienvenidos`}/>
       
         </div>

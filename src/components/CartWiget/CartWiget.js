@@ -1,11 +1,19 @@
-import cart from "./assets/carrito-de-compras.png"
+import "bulma/css/bulma.css"
+import cart from "./assets/carrito-de-compras.png";
 import {SlBasket} from "react-icons/sl";
+
+
+
+
 const CartWiget = ()=>{
-    return
-    <div>
-       <SlBasket/>
+    return (
+       
+    <div className="carrito"> <SlBasket/></div>
+ 
+  
         
-    </div>
+    
+    );
 }
 
 export default CartWiget;

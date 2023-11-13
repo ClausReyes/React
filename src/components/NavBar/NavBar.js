@@ -6,9 +6,10 @@ import "../NavBar/NavBar.css";
 const NavBar = ()=>{
 return(
     <nav>
-        <section className="hero is-success">
-            <div className="hero-body"> <DiAtom />
-        <h3 className="title">Light & Color</h3>
+        <section className="hero is-success carrito">
+            <div className="hero-body logo"> <DiAtom />
+        <h2 className="title ">Light & Color</h2>
+        <h3 className="title">Servicio de decoracion con globos y renta de equipo para envento</h3>
 
         <div className="subtitle ">
         <button className="button is-white is-medium is-outlined is-rounded gap">Arcos</button>
@@ -18,14 +19,14 @@ return(
         
 
         </div>
+        <div className="carrito">
+        <CartWiget/>0
         </div>
-        <div>
-            <SlBasket/>
-            0
         </div>
+     
 
         </section>
-      
+     
     </nav>
     
 )
