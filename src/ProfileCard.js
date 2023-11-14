@@ -1,7 +1,12 @@
 import LogoImg from "./"
 
 function ProfileCard(props){
-     const {titulo , arroba , img } =props
+     const {titulo , arroba , img } =props;
+
+     function handleClick(){
+        console.log("click en el boton");
+     };
+     
         return (
             <div className="card">
                 <div className="card-img">
@@ -14,6 +19,8 @@ function ProfileCard(props){
                         <p className="subtitle is-4">{arroba}</p>
 
                         </div>
+                        <p>Likes 0</p>
+                        <button onClick={handleClick} >+</button>
                     </div>
 
                 </div>
@@ -24,6 +31,6 @@ function ProfileCard(props){
 
 
             )
-            }
+            };
 
 export default ProfileCard;
