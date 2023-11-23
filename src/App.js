@@ -1,44 +1,23 @@
 import "bulma/css/bulma.css"
+import { useState , useEffect } from "react";
 import ProfileCard from "./ProfileCard";
 import NavBar from "./components/NavBar/NavBar";
 import "./App.css"
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import CartWiget from "./components/CartWiget/CartWiget";
-import AlexaImg from "./img/alexa.png";
-import SiriImg from "./img/siri.png";
-import CortanaImg from "./img/cortana.png";
+import ItemCount from "./components/ItemCount/ItemCount";
 
 
 
 
-function App(){
+function App(){  
     return(
       <div className="App">
            <NavBar/> 
     
            <ItemListContainer greeting={`Bienvenidos`}/>
-      
-           <div className="container">
-           
-           <div className="columns">
-                    <div className="column is-4">
-                        <ProfileCard titulo="Alexa" arroba="@Alexa22" img={AlexaImg}/>
-                    </div>
-
-                    <div className="column is-4">
-                        <ProfileCard titulo="Cortana" arroba="@Cortana66" img={CortanaImg}/> 
-                    </div>
-                    <div className="column is-4">
-                        <ProfileCard titulo="Siri" arroba="@Siri77" img={SiriImg}/> 
-                    </div>
-                    
-         
-                    
-
-            </div>
-
-           </div>
-
+      <ItemCount initial={1} stock={10} onAdd={(quantity)=> console.log("cantidad Agregada", quantity)}/>
+        
         </div>
       
 

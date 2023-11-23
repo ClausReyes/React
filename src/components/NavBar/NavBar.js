@@ -22,7 +22,7 @@ return(
 
         </div>
         <div className="carrito">
-        <CartWiget/>0
+     <CartWiget/>0
         </div>
         </div>
      
