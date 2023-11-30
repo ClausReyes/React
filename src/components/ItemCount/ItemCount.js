@@ -21,12 +21,12 @@ const decrement =() =>{
 return(
     <div className = "Counter contador" >
         <div className="Controls">
-            <button className="button is-primary" onClick={decrement}>+</button>
+            <button className="button is-primary " onClick={decrement}>-</button>
             <h4 className="Number">{quantity} </h4>
-            <button className="button is-primary" onClick={increment}>-</button>
+            <button className="button is-primary " onClick={increment}>+</button>
         </div>
         <div>
-            <button className="button is-primary"onClick={()=> onAdd(quantity)} disabled={!stock}>Agregar el carrito</button>
+            <button className="button is-primary "onClick={()=> onAdd(quantity)} disabled={!stock}>Agregar el carrito</button>
         </div>
         </div>
         
