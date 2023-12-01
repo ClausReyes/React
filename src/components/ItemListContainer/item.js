@@ -1,6 +1,6 @@
 import "./item.css"
 
-const Item =({idc, name, img,price, stock}) => {
+const Item =({id, name, img,price, stock}) => {
     return(
         <article className="CardItem">
 <header className="Header">
@@ -11,6 +11,7 @@ const Item =({idc, name, img,price, stock}) => {
 <picture>
     <img src={img} alt={name} className="ItemImg"/>
 </picture>
+
 <section>
     <p className="Info">
         Precio: ${price}
