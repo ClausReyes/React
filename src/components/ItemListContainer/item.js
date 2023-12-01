@@ -1,20 +1,30 @@
-let producto = [
-    {nombre: "Arco", precio:  1000},
-    {nombre: "Aro", precio:  1000},
-    {nombre: "Mesas decorativas", precio:  1000},
-    {nombre: "Letrero Neon", precio:  1000},
-    {nombre: "Mesas decorativas", precio:  1000},
-    {nombre: "Mesas para barra de postres", precio:  1000},
-];
+import "./item.css"
 
-function agregarIva (obj_producto){
-    let iva = obj_producto.precio *0.21;
+const Item =({idc, name, img,price, stock}) => {
+    return(
+        <article className="CardItem">
+<header className="Header">
+    <h2 className="ItemHeader">
+{name}
+    </h2>
+</header>
+<picture>
+    <img src={img} alt={name} className="ItemImg"/>
+</picture>
+<section>
+    <p className="Info">
+        Precio: ${price}
+    </p>
+    <p className="Info">
+        Stock disponible: {stock}
 
-    return{
-        nombre: obj_producto.nombre,
-        precio: obj_producto+iva
-    }
+    </p>
+</section>
+<footer className="ItemFooter">
+<button className="Option">Ver detalle</button>
+</footer>
+        </article>
+    )
 }
 
-let resultado = productos.map(agregarIva)
-console.log(resultado)
+export default Item
