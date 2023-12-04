@@ -4,14 +4,14 @@ const products =[
         name: "Mesas de decoración",
         price:  150,
         img:
-            "./img/arco-rosa.jpg",
+            "../img/arco-rosa.jpg",
         stock: 10,                        
         },
     {
         id: 2,
         name: "Aro", 
         price:  150,
-        img:"./img/aro.jpg", 
+        img:"../img/aro.jpg", 
         stock: 10,
     },
         {
@@ -37,7 +37,7 @@ const products =[
         stock: 10,    
     },
     {
-        id: 5, 
+        id: 6, 
         name: "Base torres globos", 
         price: 100,
         img: 
@@ -46,7 +46,7 @@ const products =[
     },
 
     {
-        id: 6, 
+        id: 7, 
         name: "Letrero Led Happy Birthday", 
         price: 100,
         img: 
@@ -54,7 +54,7 @@ const products =[
         stock: 10,    
     },
     {
-        id: 7, 
+        id: 8, 
         name: "Candy Bar", 
         price: 70,
         img: 
