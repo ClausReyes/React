@@ -3,6 +3,7 @@ import "./item.css"
 const Item =({id, name, img,price, stock}) => {
     return(
         <article className="CardItem">
+            <div className="card"/>
 <header className="Header">
     <h2 className="ItemHeader">
 {name}
@@ -24,6 +25,7 @@ const Item =({id, name, img,price, stock}) => {
 <footer className="ItemFooter">
 <button className="Option">Ver detalle</button>
 </footer>
+<div/>
         </article>
     )
 }

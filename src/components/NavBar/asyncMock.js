@@ -4,7 +4,7 @@ const products =[
         name: "Mesas de decoración",
         price:  150,
         img:
-            "../img/arco-rosa.jpg",
+            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.etsy.com%2Fmx%2Flisting%2F843169496%2Fsoporte-de-pedestal-dorado-con-mesa-para&psig=AOvVaw39FXuMkyJKtFDdMbwaohym&ust=1701802250138000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCPjL6cu59oIDFQAAAAAdAAAAABAI",
         stock: 10,                        
         },
     {
@@ -58,7 +58,7 @@ const products =[
         name: "Candy Bar", 
         price: 70,
         img: 
-        "./img/candy.jpg",
+        "../img/candy.JPG",
         stock: 10,  
         
     },
