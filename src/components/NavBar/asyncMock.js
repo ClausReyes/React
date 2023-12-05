@@ -1,10 +1,12 @@
+import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer"
+
 const products =[
     {
         id:1,
         name: "Mesas de decoración",
         price:  150,
         img:
-            "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.etsy.com%2Fmx%2Flisting%2F843169496%2Fsoporte-de-pedestal-dorado-con-mesa-para&psig=AOvVaw39FXuMkyJKtFDdMbwaohym&ust=1701802250138000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCPjL6cu59oIDFQAAAAAdAAAAABAI",
+            "./img/arco-rosa.JPG",
         stock: 10,                        
         },
     {
@@ -73,5 +75,14 @@ export const getProducts =() =>{
             resolve(products)
         }, 500)
     })
+}
+
+export const getProductsByID = (productId) =>{
+    return new Promise((resolve)=>{
+       setTimeout(()=>{
+        resolve(products.find(prod => prod.id === productId))
+       }, 500) 
+    }
+     )
 }
 
