@@ -1,4 +1,4 @@
-import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer"
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
 
 const products =[
     {

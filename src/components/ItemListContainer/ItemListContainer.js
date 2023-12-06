@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import{getProducts} from "../NavBar/asyncMock"
+import{getProducts} from "../../asyncMock"
 import ItemList from "./ItemList"
 
 

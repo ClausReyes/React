@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react"
-import { getProductsByID } from "../NavBar/asyncMock"
+import { getProductsByID } from "../../asyncMock"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
 
@@ -18,7 +18,7 @@ const ItemDetailContainer = () =>{
 
     return (
         <div className="ItemDetailContainer">
-          <ItemDetail{...product}/>
+          <ItemDetail {...product}/>
         </div>
     )
 }
