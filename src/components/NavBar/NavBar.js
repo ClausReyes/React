@@ -1,6 +1,6 @@
 
 import CartWiget from "../CartWiget/CartWiget";
-g
+
 import {DiAtom} from "react-icons/di";
 import {SlBasket} from "react-icons/sl";
 import "../NavBar/NavBar.css";
