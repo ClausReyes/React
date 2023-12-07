@@ -1,13 +1,16 @@
 
 import { useState, useEffect } from "react"
-import { getProductsByID } from "../../asyncMock"
+import { getProductByID } from "../../asyncMock"
 import ItemDetail from "../ItemDetail/ItemDetail"
+import ItemCount from "../ItemCount/ItemCount"
+
 
 
 const ItemDetailContainer = () =>{
-    const[product, setProduct] =useState(null)
+    const[product, setProduct] = useState(null)
+
     useEffect(()=>{
-            getProductsByID("1")
+            getProductByID(`1`)
             .then(response => {
                 setProduct(response)
             })

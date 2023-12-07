@@ -1,4 +1,4 @@
-import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer"
+
 import arcoRosaImg from "./img/arco-rosa.jpg"
 import aroImg from "./img/aro.jpg"
 import tablonImg from "./img/tablon.jpg"
@@ -10,8 +10,10 @@ import candyImg from "./img/candy.jpg"
 
 const products =[
     {
-        id:1,
+        id: 1,
         name: "Mesas de decoración",
+        category: "mobiliario",
+        description: "mesa",
         price:  150,
         img:
             arcoRosaImg,
@@ -86,12 +88,11 @@ export const getProducts =() =>{
     })
 }
 
-export const getProductsByID = (productId) =>{
+export const getProductByID = (productId) =>{
     return new Promise((resolve)=>{
        setTimeout(()=>{
         resolve(products.find(prod => prod.id === productId))
        }, 500) 
-    }
-     )
+    })
 }
 
