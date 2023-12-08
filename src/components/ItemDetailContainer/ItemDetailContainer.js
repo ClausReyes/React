@@ -7,7 +7,7 @@ import ItemCount from "../ItemCount/ItemCount"
 
 
 const ItemDetailContainer = () =>{
-    const[product, setProduct] = useState(null)
+    const[ product, setProduct] = useState(null)
 
     useEffect(()=>{
             getProductByID(`1`)

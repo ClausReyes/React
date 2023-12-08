@@ -10,7 +10,7 @@ import candyImg from "./img/candy.jpg"
 
 const products =[
     {
-        id: 1,
+        id: "1",
         name: "Mesas de decoración",
         category: "mobiliario",
         description: "mesa",
@@ -20,28 +20,28 @@ const products =[
         stock: 10,                        
         },
     {
-        id: 2,
+        id: "2",
         name: "Aro", 
         price:  150,
         img: aroImg,
         stock: 10,
     },
         {
-        id: 3,
+        id: "3",
         name: "Tablon",
         price:  80,
         img: tablonImg,
         stock: 10
     },
     {
-        id: 4,
+        id: "4",
         name: "Base Arco", 
         price:  150,
         img: arcoImg,
         stock: 10,
     },
     {
-        id: 5, 
+        id: "5", 
         name: "Maquina para inflar globos", 
         price:  100,
         img: 
@@ -49,7 +49,7 @@ const products =[
         stock: 10,    
     },
     {
-        id: 6, 
+        id: "6", 
         name: "Base torres globos", 
         price: 100,
         img: 
@@ -58,7 +58,7 @@ const products =[
     },
 
     {
-        id: 7, 
+        id: "7", 
         name: "Letrero Led Happy Birthday", 
         price: 100,
         img: 
@@ -67,7 +67,7 @@ const products =[
         stock: 10,    
     },
     {
-        id: 8, 
+        id: "8", 
         name: "Candy Bar", 
         price: 70,
         img: 
@@ -80,7 +80,7 @@ const products =[
 
 ]
 
-export const getProducts =() =>{
+export const getProducts =() => { 
     return new Promise((resolve)=> {
         setTimeout (()=> {
             resolve(products)
@@ -89,7 +89,7 @@ export const getProducts =() =>{
 }
 
 export const getProductByID = (productId) =>{
-    return new Promise((resolve)=>{
+    return new Promise((resolve) => {
        setTimeout(()=>{
         resolve(products.find(prod => prod.id === productId))
        }, 500) 
