@@ -7,12 +7,14 @@ import arcoImg from "./img/arco.jpg"
 import torresImg from "./img/torres.jpg"
 import happyImg from "./img/happy.jpg"
 import candyImg from "./img/candy.jpg"
+import arcoServiImg from  "./img/arco-rosa2.jpg"
+
 
 const products =[
     {
         id: "1",
         name: "Mesas de decoración",
-        category: "mobiliario",
+        category: "renta de mobiliario",
         description: "mesa",
         price:  150,
         img:
@@ -22,6 +24,8 @@ const products =[
     {
         id: "2",
         name: "Aro", 
+        category: "renta de mobiliario",
+        description: "base de aro para globos",
         price:  150,
         img: aroImg,
         stock: 10,
@@ -30,6 +34,8 @@ const products =[
         id: "3",
         name: "Tablon",
         price:  80,
+        category: "renta de mobiliario",
+        description: "tablon para candy bar",
         img: tablonImg,
         stock: 10
     },
@@ -37,6 +43,8 @@ const products =[
         id: "4",
         name: "Base Arco", 
         price:  150,
+        category: "renta de mobiliario",
+        description: "base de arco para globos",
         img: arcoImg,
         stock: 10,
     },
@@ -46,21 +54,28 @@ const products =[
         price:  100,
         img: 
         infladorImg,
-        stock: 10,    
+        stock: 10,   
+        category: "renta de mobiliario",
+        description: "base de aro para globos", 
     },
     {
         id: "6", 
         name: "Base torres globos", 
+        category: "torres",
+        description: "base de aro para globos",
         price: 100,
         img: 
         torresImg,
         stock: 10,    
     },
 
+    
     {
         id: "7", 
         name: "Letrero Led Happy Birthday", 
         price: 100,
+        category: "renta de mobiliario",
+        description: "letreo",
         img: 
        happyImg,
     
@@ -73,11 +88,33 @@ const products =[
         img: 
         candyImg,
         stock: 10,  
+        category: "renta de mobiliario",
+        description: "mesas para candy Bar",
         
     },
-   
+    {
+        id: "9", 
+        name: "Arco", 
+        price: 70,
+        img: 
+        arcoServiImg,
+        stock: 10,  
+        category: "arcos",
+        description: "mesas para candy Bar",
+        
+    },
     
-
+    {
+        id: "10", 
+        name: "Aro", 
+        price: 70,
+        img: 
+        arcoServiImg,
+        stock: 10,  
+        category: "aro",
+        description: "mesas para candy Bar",
+        
+    },
 ]
 
 export const getProducts =() => { 
