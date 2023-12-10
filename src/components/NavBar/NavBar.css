@@ -1,5 +1,10 @@
 
-
+.boton{
+   display: flex;
+   justify-items:center;
+   gap: 30px;   
+   
+}
 .gap{
    margin: 7px;
 }
@@ -16,3 +21,10 @@
    font-family:'Times New Roman', Times, serif;
     
 }
+.cart{
+   font-size: 10px;
+   display:flex;
+   justify-items: center
+}
+
+.NavBar{height:30px}

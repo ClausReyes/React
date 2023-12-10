@@ -2,8 +2,7 @@
 import { useState, useEffect } from "react"
 import { getProductByID } from "../../asyncMock"
 import ItemDetail from "../ItemDetail/ItemDetail"
-import ItemCount from "../ItemCount/ItemCount"
-import { useParams } from "react-router"
+import { useParams } from "react-router-dom";
 
 
 
