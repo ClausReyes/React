@@ -16,18 +16,17 @@ const Item =({id, name, img,price, stock}) => {
 <section>
     <p className="Info">
         Precio: ${price}
-    </p>
+    </p>74
     <p className="Info">
-        Stock disponible: {stock}
-
-    </p>
+        Stoc0k disponible: {stock}
+ </p>
 </section>
 <footer className="ItemFooter">
 <link to ={`/item${id}`} className="option"> ver detalle</link>
 </footer>
 <div/>
-        </article>
+  </article>
     )
-}
+};
 
 export default Item
