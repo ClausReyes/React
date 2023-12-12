@@ -8,6 +8,8 @@ import torresImg from "./img/torres.jpg"
 import happyImg from "./img/happy.jpg"
 import candyImg from "./img/candy.jpg"
 import arcoServiImg from  "./img/arco-rosa2.jpg"
+import aroServImg from "./img/aro51.jpg"
+
 
 
 const products =[
@@ -62,7 +64,7 @@ const products =[
         id: "6", 
         name: "Base torres globos", 
         category: "torres",
-        description: "base de aro para globos",
+        description: "servicio de torres de globos",
         price: 100,
         img: 
         torresImg,
@@ -95,24 +97,24 @@ const products =[
     {
         id: "9", 
         name: "Arco", 
-        price: 70,
+        price: 250,
         img: 
         arcoServiImg,
         stock: 10,  
-        category: "arcos",
-        description: "mesas para candy Bar",
+        category: "arco",
+        description: "Servicio de arco de globos",
         
     },
     
     {
         id: "10", 
         name: "Aro", 
-        price: 70,
+        price: 300,
         img: 
-        arcoServiImg,
+        aroServImg,
         stock: 10,  
         category: "aro",
-        description: "mesas para candy Bar",
+        description: "Servicio de aro de globos",
         
     },
 ]
@@ -128,14 +130,14 @@ export const getProducts =() => {
 export const getProductByID = (productId) =>{
     return new Promise((resolve) => {
        setTimeout(()=>{
-        resolve(products.find(prod => prod.id === productId))
+        resolve(products.filter(prod => prod.id === productId))
        }, 500) 
     })
 }
 export const getProductsByCategory = (productcategory) =>{
     return new Promise((resolve) => {
        setTimeout(()=>{
-        resolve(products.find(prod => prod.category === productcategory))
+        resolve(products.filter(prod => prod.category === productcategory))
        }, 500) 
     })
 }
