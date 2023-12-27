@@ -1,6 +1,5 @@
-import "bulma/css/bulma.css"
-import cart from "./assets/carrito-de-compras.png";
-import "./CartWiget.css"
+
+import carrito from "./assets/carrito-de-compras.png"
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
@@ -14,7 +13,7 @@ const CartWiget = ()=>{
     return (
        
        <Link to= "/cart" className="CartWidget" style={{display: totalQuantity > 0 ? "block" :"none"}}>
-        <img className="CartImg" src={cart} alt="cart-wdiget"/>
+        <img className="CartImg" src={carrito} alt="cart-wdiget"/>
         {totalQuantity}
        
        </Link>
